@@ -36,6 +36,7 @@ Swift 工具类 Foundation、UIKit、Helper
   s.subspec 'UIKit' do |uikit|
       uikit.source_files = 'SoSwiftHelper/Classes/UIKit/**/*.swift'
       uikit.dependency 'SoSwiftHelper/Core'
+      uikit.dependency 'SoSwiftHelper/Foundation'
   end
 
 end
