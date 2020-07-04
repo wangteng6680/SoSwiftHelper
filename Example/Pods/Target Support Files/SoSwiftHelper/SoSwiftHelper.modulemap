@@ -1,0 +1,6 @@
+framework module SoSwiftHelper {
+  umbrella header "SoSwiftHelper-umbrella.h"
+
+  export *
+  module * { export * }
+}
