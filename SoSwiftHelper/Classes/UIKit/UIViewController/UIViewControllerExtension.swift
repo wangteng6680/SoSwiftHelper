@@ -21,7 +21,7 @@ public extension SoSwiftHelperViewController {
 		guard let image = image else {
 			return
 		}
-		var button = UIButton(type: .custom)
+        let button = UIButton(type: .custom)
 		button.frame = CGRect(origin: .zero, size: image.size)
 		button.setImage( image, for: .normal)
 		button.setImage( image, for: .highlighted)
@@ -37,7 +37,7 @@ public extension SoSwiftHelperViewController {
 		guard let image = image else {
 			return
 		}
-		var button = UIButton(type: .custom)
+		let button = UIButton(type: .custom)
 		button.frame = CGRect(origin: .zero, size: image.size)
 		button.setImage( image, for: .normal)
 		button.setImage( image, for: .highlighted)
@@ -54,7 +54,7 @@ public extension SoSwiftHelperViewController {
                                 block: @escaping (UIButton) ->()) {
 		let width = titleText.so.width(Float.greatestFiniteMagnitude, font: font)
 		let size =  CGSize(width: width, height: 44)
-		var button = UIButton(type: .custom)
+		let button = UIButton(type: .custom)
 		button.frame = CGRect(origin: .zero, size: size)
 		button.setTitle(titleText, for: .normal)
 		button.setTitle(titleText, for: .selected)

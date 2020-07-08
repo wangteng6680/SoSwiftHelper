@@ -12,6 +12,8 @@
 		048892DE24AF83E200444197 /* SwiftCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048892DA24AF83E200444197 /* SwiftCapture.swift */; };
 		048892DF24AF83E200444197 /* SwiftVideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048892DB24AF83E200444197 /* SwiftVideoCapture.swift */; };
 		048892E024AF83E200444197 /* SwiftBaseCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048892DC24AF83E200444197 /* SwiftBaseCapture.swift */; };
+		0488930124B3145900444197 /* TestObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 0488930024B3145900444197 /* TestObjc.m */; };
+		04C28B5724B59DF5008F6357 /* SampleObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C28B5624B59DF5008F6357 /* SampleObjc.m */; };
 		54D3D698242622CDBC480942 /* Pods_SoSwiftHelper_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E90F2F8F1BEC7D64AAC2B1BA /* Pods_SoSwiftHelper_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -36,6 +38,11 @@
 		048892DA24AF83E200444197 /* SwiftCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftCapture.swift; sourceTree = "<group>"; };
 		048892DB24AF83E200444197 /* SwiftVideoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftVideoCapture.swift; sourceTree = "<group>"; };
 		048892DC24AF83E200444197 /* SwiftBaseCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftBaseCapture.swift; sourceTree = "<group>"; };
+		048892FE24B3145900444197 /* SoSwiftHelper_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SoSwiftHelper_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		048892FF24B3145900444197 /* TestObjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObjc.h; sourceTree = "<group>"; };
+		0488930024B3145900444197 /* TestObjc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObjc.m; sourceTree = "<group>"; };
+		04C28B5524B59DF5008F6357 /* SampleObjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleObjc.h; sourceTree = "<group>"; };
+		04C28B5624B59DF5008F6357 /* SampleObjc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleObjc.m; sourceTree = "<group>"; };
 		36B8E6BE57B9CE8C2FB2D37D /* Pods_SoSwiftHelper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoSwiftHelper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* SoSwiftHelper_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoSwiftHelper_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -119,6 +126,11 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				048892FF24B3145900444197 /* TestObjc.h */,
+				0488930024B3145900444197 /* TestObjc.m */,
+				048892FE24B3145900444197 /* SoSwiftHelper_Example-Bridging-Header.h */,
+				04C28B5524B59DF5008F6357 /* SampleObjc.h */,
+				04C28B5624B59DF5008F6357 /* SampleObjc.m */,
 			);
 			name = "Example for SoSwiftHelper";
 			path = SoSwiftHelper;
@@ -232,11 +244,11 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1150;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1150;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -355,8 +367,10 @@
 				048892DD24AF83E200444197 /* SwiftAudioCapture.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				048892E024AF83E200444197 /* SwiftBaseCapture.swift in Sources */,
+				0488930124B3145900444197 /* TestObjc.m in Sources */,
 				048892DE24AF83E200444197 /* SwiftCapture.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				04C28B5724B59DF5008F6357 /* SampleObjc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,14 +516,17 @@
 			baseConfigurationReference = 79EFB76B97EA6D7BFDB237FC /* Pods-SoSwiftHelper_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SoSwiftHelper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SoSwiftHelper/SoSwiftHelper_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -518,14 +535,16 @@
 			baseConfigurationReference = BAFB2DAB26E4ED84C2749B72 /* Pods-SoSwiftHelper_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SoSwiftHelper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SoSwiftHelper/SoSwiftHelper_Example-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -546,7 +565,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoSwiftHelper_Example.app/SoSwiftHelper_Example";
 			};
 			name = Debug;
@@ -564,7 +583,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoSwiftHelper_Example.app/SoSwiftHelper_Example";
 			};
 			name = Release;

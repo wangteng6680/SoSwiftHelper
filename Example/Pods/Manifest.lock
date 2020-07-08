@@ -10,6 +10,7 @@ PODS:
   - SoSwiftHelper/Helper (0.1.0)
   - SoSwiftHelper/UIKit (0.1.0):
     - SoSwiftHelper/Core
+    - SoSwiftHelper/Foundation
 
 DEPENDENCIES:
   - SoSwiftHelper (from `../`)
@@ -19,8 +20,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SoSwiftHelper: 7d83d1fb88012af9d70d09a5ebad7897bce035c5
+  SoSwiftHelper: 6fe0fa179d6a55f83b069fd03df318d46d670d69
 
-PODFILE CHECKSUM: bb1f9a1a516ca1a4497834bac5e5a45cf7308f38
+PODFILE CHECKSUM: 8ed43edba65f7de0c83b2b23bc9e6cc21a159009
 
 COCOAPODS: 1.9.3

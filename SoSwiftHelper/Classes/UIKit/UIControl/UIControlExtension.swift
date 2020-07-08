@@ -38,7 +38,7 @@ public extension SoSwiftHelperWrapper where Core: UIControl {
     ///   - event: The UIControl.Event.
     ///   - block: The block which is invoked then the action message is sent
     /// - Returns: No return.
-    mutating func addTargetEvent(_ event: UIControl.Event = .touchUpInside,
+    func addTargetEvent(_ event: UIControl.Event = .touchUpInside,
                                  block: @escaping (UIControl)->()) {
         let target = TargetEventAction(control: base, block: block)
         base.addTarget(target, action: #selector(target.didClick), for: event)

@@ -7,7 +7,7 @@
 //
 import UIKit
 
-public struct SoSwiftHelperWrapper<Core> {
+public class SoSwiftHelperWrapper<Core> {
     var base: Core
     init(_ core: Core) {
         self.base = core
@@ -19,6 +19,7 @@ public protocol SoSwiftHelperWrapperProperty {
 }
 
 public extension SoSwiftHelperWrapperProperty {
+    
     var so: SoSwiftHelperWrapper<Self> {
         set { }
         get {SoSwiftHelperWrapper(self)}
