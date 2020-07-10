@@ -9,61 +9,61 @@ import UIKit
 
 public extension SoSwiftHelperWrapper where Core == UIApplication {
 
-	var emptyURL: URL {
+	static var emptyURL: URL {
 		return URL(fileURLWithPath: "")
 	}
 
 	/// "Documents" folder in this app's sandbox.
-	var documentsURL: URL {
+	static var documentsURL: URL {
 		return FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first ?? emptyURL
 	}
 
 	/// "Documents" folder in this app's sandbox.
-	var documentsPath: String {
+	static var documentsPath: String {
 		return NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first ?? ""
 	}
 
 	/// "Caches" folder in this app's sandbox.
-	var cachesURL: URL {
+	static var cachesURL: URL {
 		return FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first ?? emptyURL
 	}
 
 	/// "Caches" folder in this app's sandbox.
-	var cachesPath: String {
+	static var cachesPath: String {
 		return NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true).first ?? ""
 	}
 
 	/// "Library" folder in this app's sandbox.
-	var libraryURL: URL {
+	static var libraryURL: URL {
 		return FileManager.default.urls(for: .libraryDirectory, in: .userDomainMask).first ?? emptyURL
 	}
 
 	/// "Library" folder in this app's sandbox.
-	var libraryPath: String {
+	static var libraryPath: String {
 		return NSSearchPathForDirectoriesInDomains(.libraryDirectory, .userDomainMask, true).first ?? ""
 	}
 
 	/// Application's Bundle Name (show in SpringBoard).
-	var appBundleName: String? {
+	static var appBundleName: String? {
 		return Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as? String
 	}
 
 	/// Application's Version.  e.g. "1.2.0"
-	var appVersion: String? {
+	static var appVersion: String? {
 		return Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String
 	}
 
 	/// Application's Bundle ID.  e.g. "com.ibireme.MyApp"
-	var appBundleID: String? {
+	static var appBundleID: String? {
 		return Bundle.main.object(forInfoDictionaryKey: "CFBundleIdentifier") as? String
 	}
 
 	/// Application's Build number. e.g. "123"
-	var appBuildVersion: String? {
+	static var appBuildVersion: String? {
 		return Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String
 	}
 
-	var appInfoDictionary: [String: Any]? {
+	static var appInfoDictionary: [String: Any]? {
 		return Bundle.main.infoDictionary
 	}
 }

@@ -15,7 +15,7 @@
     SwiftHelperLocationManager *manager = [[SwiftHelperLocationManager alloc]  init];
     [manager start: LocationUpdateProxyOnce];
     [manager setDidUpdateLocations:^(NSArray<CLLocation *> * locations) {
-        manager.locationManager.location
+        
     }];
 }
 

@@ -8,6 +8,8 @@
 
 import UIKit
 import AVFoundation
+import AudioToolbox
+import VideoToolbox
 
 enum CaptureStyple {
 	case video
@@ -19,6 +21,8 @@ class SwiftCapture: NSObject {
 
 	var style: CaptureStyple = .all
 
+    var decompressionSession: VTCompressionSession?
+    
 	var perViewLayer: AVCaptureVideoPreviewLayer {
 		return videoCapture.perViewLayer
 	}
@@ -83,6 +87,22 @@ extension SwiftCapture: SwiftCaptureBufferDelegate {
 	func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
 		if connection  == audioCapture.captureConnection {
 			print("audio")
+            
+//            var format: CMVideoFormatDescription?
+//            CMVideoFormatDescriptionCreate(allocator: nil,
+//                                           codecType: kCMVideoCodecType_H264,
+//                                           width: 100, height: 200,
+//                                           extensions: nil,
+//                                           formatDescriptionOut: &format)
+//            
+//            VTDecompressionSessionCreate(allocator: nil,
+//                                         formatDescription: format!,
+//                                         decoderSpecification: nil,
+//                                         imageBufferAttributes: nil,
+//                                         outputCallback: UnsafePointer<VTDecompressionOutputCallbackRecord>?, decompressionSessionOut: &decompressionSession)
+//            
+//            VTCompressionSessionPrepareToEncodeFrames(decompressionSession!)
+            
 		} else  if connection  == videoCapture.captureConnection {
 			print("video")
 		}
