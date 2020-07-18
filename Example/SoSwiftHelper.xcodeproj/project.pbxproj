@@ -13,6 +13,7 @@
 		048892DF24AF83E200444197 /* SwiftVideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048892DB24AF83E200444197 /* SwiftVideoCapture.swift */; };
 		048892E024AF83E200444197 /* SwiftBaseCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048892DC24AF83E200444197 /* SwiftBaseCapture.swift */; };
 		0488930124B3145900444197 /* TestObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 0488930024B3145900444197 /* TestObjc.m */; };
+		04A703F124BC9D8600D095E6 /* VidioEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A703F024BC9D8600D095E6 /* VidioEncode.m */; };
 		04C28B5724B59DF5008F6357 /* SampleObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C28B5624B59DF5008F6357 /* SampleObjc.m */; };
 		54D3D698242622CDBC480942 /* Pods_SoSwiftHelper_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E90F2F8F1BEC7D64AAC2B1BA /* Pods_SoSwiftHelper_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -41,6 +42,8 @@
 		048892FE24B3145900444197 /* SoSwiftHelper_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SoSwiftHelper_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		048892FF24B3145900444197 /* TestObjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObjc.h; sourceTree = "<group>"; };
 		0488930024B3145900444197 /* TestObjc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObjc.m; sourceTree = "<group>"; };
+		04A703EF24BC9D8600D095E6 /* VidioEncode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VidioEncode.h; sourceTree = "<group>"; };
+		04A703F024BC9D8600D095E6 /* VidioEncode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VidioEncode.m; sourceTree = "<group>"; };
 		04C28B5524B59DF5008F6357 /* SampleObjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleObjc.h; sourceTree = "<group>"; };
 		04C28B5624B59DF5008F6357 /* SampleObjc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleObjc.m; sourceTree = "<group>"; };
 		36B8E6BE57B9CE8C2FB2D37D /* Pods_SoSwiftHelper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoSwiftHelper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +94,8 @@
 				048892DC24AF83E200444197 /* SwiftBaseCapture.swift */,
 				048892DA24AF83E200444197 /* SwiftCapture.swift */,
 				048892DB24AF83E200444197 /* SwiftVideoCapture.swift */,
+				04A703EF24BC9D8600D095E6 /* VidioEncode.h */,
+				04A703F024BC9D8600D095E6 /* VidioEncode.m */,
 			);
 			path = Capture;
 			sourceTree = "<group>";
@@ -370,6 +375,7 @@
 				0488930124B3145900444197 /* TestObjc.m in Sources */,
 				048892DE24AF83E200444197 /* SwiftCapture.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				04A703F124BC9D8600D095E6 /* VidioEncode.m in Sources */,
 				04C28B5724B59DF5008F6357 /* SampleObjc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

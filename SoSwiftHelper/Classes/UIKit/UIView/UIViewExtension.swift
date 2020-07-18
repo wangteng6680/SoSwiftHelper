@@ -7,7 +7,7 @@
 
 import UIKit
 
-public extension SoSwiftHelperWrapper where Core == UIView {
+public extension SoSwiftHelperWrapper where Core : UIView {
 
     /// Shortcut for frame.origin.x.
 	var left: CGFloat {

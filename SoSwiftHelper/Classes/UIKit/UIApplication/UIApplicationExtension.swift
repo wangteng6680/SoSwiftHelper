@@ -62,6 +62,11 @@ public extension SoSwiftHelperWrapper where Core == UIApplication {
 	static var appBuildVersion: String? {
 		return Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String
 	}
+    
+    /// Application's DisplayName. e.g. "123"
+    static var appDisplayName: String? {
+        return Bundle.main.object(forInfoDictionaryKey: "CFBundleDisplayName") as? String
+    }
 
 	static var appInfoDictionary: [String: Any]? {
 		return Bundle.main.infoDictionary
