@@ -67,7 +67,7 @@ fileprivate extension String {
 
 public protocol SoMapURLRouteHandler {
 
-	var mapRouteHandlerParam: SoMapRouteHandlerParam { get set }
+    var mapRouteHandlerParam: SoMapRouteHandlerParam { get set }
 
 	var scheme: String { get set }
 
@@ -111,10 +111,10 @@ public extension SoMapURLRouteHandler {
 }
 
 public struct SoMapRouteHandlerParam {
-	var src: CLLocationCoordinate2D?
-	var srcName: String?
-	var dest: CLLocationCoordinate2D?
-	var destName: String?
+    public var src: CLLocationCoordinate2D?
+    public var srcName: String?
+    public var dest: CLLocationCoordinate2D?
+    public var destName: String?
 }
 
 public struct SoGaodeMapRouteHandler: SoMapURLRouteHandler {

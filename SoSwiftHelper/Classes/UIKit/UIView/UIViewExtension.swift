@@ -81,7 +81,7 @@ public extension SoSwiftHelperWrapper where Core : UIView {
 			base.frame = frame
 		}
 		get {
-			return base.frame.size.width
+			return base.frame.size.height
 		}
 	}
 }
